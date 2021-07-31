@@ -35,7 +35,7 @@ const Footer = ({ state }) => (
         fontFamily="heading"
         textTransform="uppercase"
       >
-        © {new Date().getFullYear()} Frontity
+       <small>© {new Date().getFullYear()} Enzo's Great Adventure</small>
       </FooterSectionItem>
 
       <FooterSectionItem borderColor="accent.400">
@@ -51,7 +51,7 @@ const Footer = ({ state }) => (
         fontFamily="heading"
         textTransform="uppercase"
       >
-        Made with Frontity
+        <small>Built with 🍖 by Marc's Web Studio</small>
       </FooterSectionItem>
     </FooterSectionGroup>
   </FooterSection>

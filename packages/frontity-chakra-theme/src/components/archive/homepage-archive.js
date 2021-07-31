@@ -31,7 +31,7 @@ const HomepageArchive = ({ state, libraries }) => {
           fontSize={{ base: "4xl", md: "6xl" }}
           color="accent.400"
         >
-          Latest Posts
+          The Latest
         </Heading>
 
         <SimpleGrid
@@ -46,7 +46,7 @@ const HomepageArchive = ({ state, libraries }) => {
         </SimpleGrid>
 
         <PaginationButton mt="40px" link="/page/2">
-          More posts
+          Discover More
         </PaginationButton>
       </Box>
       {libraries.newsletter && (
