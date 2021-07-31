@@ -17,11 +17,12 @@
   },
   "prettier": {},
   "dependencies": {
-    "frontity": "^1.16.1",
     "@frontity/core": "^1.14.3",
-    "@frontity/wp-source": "^1.11.5",
-    "@frontity/tiny-router": "^1.4.3",
     "@frontity/html2react": "^1.7.0",
+    "@frontity/tiny-router": "^1.4.4",
+    "@frontity/wp-comments": "^1.0.0",
+    "@frontity/wp-source": "^1.11.5",
+    "frontity": "^1.17.0",
     "frontity-chakra-theme": "./packages/frontity-chakra-theme"
   }
 }

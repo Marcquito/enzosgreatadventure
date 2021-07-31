@@ -35,7 +35,7 @@ const Footer = ({ state }) => (
         fontFamily="heading"
         textTransform="uppercase"
       >
-       <small>© {new Date().getFullYear()} Enzo's Great Adventure</small>
+      <small>© {new Date().getFullYear()} Enzo's Great Adventure</small>
       </FooterSectionItem>
 
       <FooterSectionItem borderColor="accent.400">

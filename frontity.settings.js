@@ -21,8 +21,8 @@ const settings = {
           // the top-level navigation labels and links
           "menu": [
             ["Home", "/"],
-            ["The Great Adventure", "/category/the-great-adventure"],
             ["Our Story", "/about"],
+            ["The Great Adventure", "/category/the-great-adventure"],
           ],
           // the social links
           socialLinks: [
@@ -72,7 +72,8 @@ const settings = {
       }
     },
     "@frontity/tiny-router",
-    "@frontity/html2react"
+    "@frontity/html2react",
+    "@frontity/wp-comments"
   ]
 };
 
