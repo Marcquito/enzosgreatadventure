@@ -57,6 +57,7 @@ const Theme = ({ state }) => {
       <Footer />
     </ChakraProvider>
   );
+
 };
 
 export default connect(Theme);

@@ -32,7 +32,7 @@ const chakraTheme = {
       socialLinks: [],
       menu: [],
       featured: {
-        showOnArchive: false,
+        showOnArchive: true,
         showOnPost: true
       },
 

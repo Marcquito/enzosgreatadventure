@@ -10,6 +10,7 @@ import FeaturedMedia from "./featured-media";
 import PostHeader from "./post-header";
 import PostProgressBar from "./post-progressbar";
 import { getPostData, formatPostData } from "../helpers";
+import Comments from "../comments";
 
 const Post = ({ state, actions, libraries }) => {
   const postData = getPostData(state);
@@ -63,7 +64,6 @@ const Post = ({ state, actions, libraries }) => {
         >
           <Html2React html={post.content} />
         </Content>
-
         <Divider borderBottom="1px solid" my="80px" />
 
         <Section px={{ base: "32px", md: "0" }}>
@@ -74,6 +74,7 @@ const Post = ({ state, actions, libraries }) => {
             link={post.author.link}
           />
         </Section>
+        <Comments postId={post.id} />
       </Section>
     </LightPatternBox>
   );

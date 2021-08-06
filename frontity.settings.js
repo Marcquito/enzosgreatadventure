@@ -13,9 +13,9 @@ const settings = {
       "state": {
         "theme": {
           // The logo can be a text or an image url
-          logo: "https://admin.marcswebstudio.com/enzosgreatadventure/wp-content/uploads/sites/2/2021/07/mws-logo-v1-full.png",
+          logo: "Enzo's Great Adventure",
           // show background pattern
-          showBackgroundPattern: true,
+          showBackgroundPattern: false,
           // show social links
           showSocialLinks: true,
           // the top-level navigation labels and links
@@ -58,7 +58,7 @@ const settings = {
           },
           "featured": {
             "showOnList": true,
-            "showOnPost": false
+            "showOnPost": true
           }
         }
       }

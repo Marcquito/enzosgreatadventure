@@ -117,10 +117,10 @@ const monthNames = [
 
 const formatDay = day => {
   const lastLetter = day[day.length - 1];
-  if (lastLetter) return `${day}nd`;
-  if (lastLetter) return `${day}st`;
-  if (lastLetter) return `${day}rd`;
-  return `${day}th`;
+  if (lastLetter) return `${day}`;
+  if (lastLetter) return `${day}`;
+  if (lastLetter) return `${day}`;
+  return `${day}`;
 };
 
 export function formatDate(date) {
@@ -129,7 +129,7 @@ export function formatDate(date) {
   const month = jsDate.getMonth() + 1;
   const year = jsDate.getFullYear();
 
-  return `${formatDay(day)} ${monthNames[month]}, ${year}`;
+  return `${monthNames[month]} ${formatDay(day)}, ${year}`;
 }
 
 export function isUrl(str) {
