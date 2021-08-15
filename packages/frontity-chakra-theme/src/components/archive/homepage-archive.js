@@ -28,7 +28,7 @@ const HomepageArchive = ({ state, libraries }) => {
         <Heading
           textTransform="uppercase"
           textAlign="center"
-          fontSize={{ base: "4xl", md: "6xl" }}
+          fontSize={{ base: "4xl", md: "7xl" }}
           color="accent.400"
         >
           Keep Digging 🐾

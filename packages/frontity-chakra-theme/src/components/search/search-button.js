@@ -5,6 +5,7 @@ import { IoIosSearch } from "react-icons/io";
 const SearchButton = props => (
   <Box
     aria-label="Search this site"
+    borderRadius="100px"
     as="button"
     display="flex"
     alignItems="center"
