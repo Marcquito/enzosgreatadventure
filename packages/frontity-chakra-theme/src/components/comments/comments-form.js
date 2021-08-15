@@ -8,11 +8,7 @@ const CommentsForm = ({ actions, state, postId }) => {
   return (
     <>
     <EnzosCommentsForm>
-        <h3 className="comments-form-title">Leave a Comment!</h3>
-        <p>
-            Hey, thanks for reading. We (and Enzo especially) really appreciate you spending time here. 
-            Feel free to post a comment with some thoughts on our topic! 🍖
-        </p>
+        <h3 className="comments-form-title">Leave a Comment 🦴</h3>
         <form className="comments-form"
             onSubmit={(e) => {
             e.preventDefault();
@@ -76,8 +72,7 @@ const CommentsForm = ({ actions, state, postId }) => {
             <div>
             {form?.isSubmitted && "The comment was submitted successfully!"}
             </div>
-
-            <input className="comment-submit" type="Submit" />
+            <button className="comment-submit" type="submit">Post Comment!</button>
         </form>
     </EnzosCommentsForm>
     </>
@@ -120,5 +115,15 @@ const EnzosCommentsForm = styled.div`
     }
     .comment-submit{
         background: var(--chakra-colors-accent-400);
+        border: 1px solid var(--chakra-colors-accent-400);
+        width: 100%;
+        padding: 10px 20px;
+        margin: 10px 0;
+        color: #333;
+        transition: 0.3s;
+    }
+    .comment-submit:hover{
+        background: transparent;
+        color: #ffffff;
     }
 `;

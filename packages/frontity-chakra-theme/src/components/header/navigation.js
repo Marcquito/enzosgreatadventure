@@ -46,7 +46,7 @@ const SiteMenuItem = ({ link, ...props }) => (
     color="white"
     fontSize={{ base: "sm", lg: "md" }}
     fontWeight="medium"
-    fontFamily="Kelson"
+    fontFamily="EnzosWorld"
     textTransform="uppercase"
     position="relative"
     cursor="pointer"

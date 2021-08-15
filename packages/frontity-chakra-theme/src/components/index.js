@@ -1,4 +1,4 @@
-import { Box, ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { Box, ChakraProvider, extendTheme, withDefaultSize } from "@chakra-ui/react";
 import { connect, Head } from "frontity";
 import Switch from "@frontity/components/switch";
 import React from "react";
@@ -20,7 +20,8 @@ const Theme = ({ state }) => {
 
   const overrides = extendTheme({
     fonts: {
-      heading: "Kelson, system-ui, Helvetica, sans-serif"
+      heading: "EnzosWorld, system-ui, Helvetica, sans-serif",
+      body: "EnzosBodyText, system-ui, Helvetica, sans-serif"
     },
     colors: { ...state.theme.colors }
   });

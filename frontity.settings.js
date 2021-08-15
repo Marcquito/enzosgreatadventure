@@ -15,13 +15,14 @@ const settings = {
           // The logo can be a text or an image url
           logo: "Enzo's Great Adventure",
           // show background pattern
-          showBackgroundPattern: false,
+          showBackgroundPattern: true,
           // show social links
           showSocialLinks: true,
           // the top-level navigation labels and links
           "menu": [
             ["Home", "/"],
             ["Our Story", "/about"],
+            ["Travel Tips", "/category/travel-tips"],
             ["The Great Adventure", "/category/the-great-adventure"],
           ],
           // the social links
