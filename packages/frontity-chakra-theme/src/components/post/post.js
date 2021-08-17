@@ -64,17 +64,17 @@ const Post = ({ state, actions, libraries }) => {
         >
           <Html2React html={post.content} />
         </Content>
-        <Divider borderBottom="1px solid" my="80px" />
+        {!postData.isPage && <Divider borderBottom="1px solid" my="80px" />}
 
         <Section px={{ base: "32px", md: "0" }}>
-          <AuthorBio
+          {!postData.isPage && <AuthorBio
             image={post.author.avatar_urls["96"]}
             name={post.author.name}
             description={post.author.description}
             link={post.author.link}
-          />
+          />}
         </Section>
-        <Comments postId={post.id} />
+        {!postData.isPage && <Comments postId={post.id} />}
       </Section>
     </LightPatternBox>
   );
@@ -92,14 +92,35 @@ const Content = styled.div`
     max-width: 100%;
   }
 
+  h1, h2, h3, h4, h5{
+    font-family: EnzosWorld;
+    line-height: 1em;
+    text-transform: uppercase;
+  }
+  h2{
+    font-size: 3em;
+    margin-top: 40px;
+  }
+  h3{
+    font-size: 2.2em;
+  }
+
+  p{
+    font-size: 18px;
+  }
+
   ul {
     padding: 1rem;
+    font-size: 18px;
+    margin-left: 35px;
+    line-height: var(--chakra-lineHeights-tall);
   }
 
   img {
     width: 100%;
     object-fit: cover;
     object-position: center;
+    box-shadow: 0px 50px 100px -50px var(--chakra-colors-primary-700);
   }
 
   figure {
@@ -107,10 +128,45 @@ const Content = styled.div`
     /* next line overrides an inline style of the figure element. */
     width: 100% !important;
   }
+  
+  figcaption{
+    background: var(--chakra-colors-primary-700);
+    color: white;
+    padding: 10px 5px;
+    margin-top: 0px;
+  }
 
   iframe {
     display: block;
     margin: auto;
+  }
+
+  /* Gravity Forms (Main Contact Form) */
+  .enzos-form{
+    background: var(--chakra-colors-primary-700);
+    color: white;
+    margin: 40px;
+    padding: 40px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .enzos-form legend, .enzos-form label{
+    display: none;
+  }
+  .enzos-form input, .enzos-form textarea{
+    width: 100%;
+    border-radius: 0px!important;
+  }
+  .enzos-form input[type="submit"]{
+    background: var(--chakra-colors-accent-400);
+    border: none;
+    border-radius: 0px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: #333;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
 
   /* Input fields styles */

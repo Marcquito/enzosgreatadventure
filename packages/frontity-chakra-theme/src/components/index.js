@@ -20,8 +20,9 @@ const Theme = ({ state }) => {
 
   const overrides = extendTheme({
     fonts: {
-      heading: "EnzosWorld, system-ui, Helvetica, sans-serif",
-      body: "EnzosBodyText, system-ui, Helvetica, sans-serif"
+      heading: "EnzosWorld, system-ui, Helvetica, sans-serif", 
+      body: "EnzosBodyText, system-ui, Helvetica, sans-serif",
+      menu: "EnzosWorld, system-ui, Helvetica, sans-serif"
     },
     colors: { ...state.theme.colors }
   });

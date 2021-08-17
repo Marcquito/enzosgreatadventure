@@ -12,6 +12,8 @@ const MenuItem = ({ index, children, mb, link, ...rest }) => (
       minH="40px"
       borderBottom="1px solid"
       borderColor="#ffffff14"
+      fontFamily="EnzosWorld"
+      textTransform="uppercase"
       _hover={{
         bg: "rgba(236, 164, 25, 0.14)",
         borderColor: "accent.400",

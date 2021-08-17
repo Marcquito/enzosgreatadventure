@@ -11,6 +11,7 @@ const Page404 = () => (
       </span>
     </Description>
   </Container>
+  
 );
 
 export default Page404;
@@ -20,6 +21,8 @@ const Container = styled.div`
   margin: 0;
   padding: 24px;
   text-align: center;
+  font-family: EnzosWorld;
+  text-transform: uppercase;
 `;
 
 const Title = styled.h1`

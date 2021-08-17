@@ -17,6 +17,9 @@ export const PaginationButton = styled(Link)`
   border: none;
   background: #333a35;
   color: #eca419;
+  border-radius: 100px;
+  font-family: EnzosWorld;
+  text-transform: uppercase;
 
   &:hover {
     background-color: #48584d;

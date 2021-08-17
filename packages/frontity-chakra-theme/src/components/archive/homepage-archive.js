@@ -46,7 +46,7 @@ const HomepageArchive = ({ state, libraries }) => {
         </SimpleGrid>
 
         <PaginationButton mt="40px" link="/page/2">
-          Dig for More...
+          Uncover More...
         </PaginationButton>
       </Box>
       {libraries.newsletter && (

@@ -74,6 +74,7 @@ const CommentsForm = ({ actions, state, postId }) => {
             </div>
             <button className="comment-submit" type="submit">Post Comment!</button>
         </form>
+
     </EnzosCommentsForm>
     </>
   );

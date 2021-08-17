@@ -24,7 +24,7 @@ const PostHeader = ({
     )}
     <Heading
       fontWeight="bold"
-      size="2xl"
+      size="3xl"
       mt="30px"
       mb={{ base: "20px", lg: "32px" }}
       textTransform="uppercase"
