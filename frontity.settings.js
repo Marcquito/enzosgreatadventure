@@ -68,7 +68,7 @@ const settings = {
       "state": {
         "source": {
           "url": "https://admin.enzosgreatadventure.com", 
-          hoempage: "/"
+          homepage: "/"
         }
       }
     },
