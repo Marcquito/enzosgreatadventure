@@ -108,12 +108,21 @@ const Content = styled.div`
   p{
     font-size: 18px;
   }
+  strong{
+    font-family: 
+  }
 
   ul {
     padding: 1rem;
     font-size: 18px;
     margin-left: 35px;
     line-height: var(--chakra-lineHeights-tall);
+  }
+
+  ul li{
+    list-style-type: "🦴";
+    padding: 0 0 0 10px;
+    margin-bottom: 10px;
   }
 
   img {
@@ -241,6 +250,10 @@ const Content = styled.div`
     .alignleft {
       float: left;
       margin-right: 24px;
+    }
+
+    .enzos-form{
+
     }
   }
 `;

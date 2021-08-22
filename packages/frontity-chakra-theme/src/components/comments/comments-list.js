@@ -5,7 +5,7 @@ import { formatDate } from "../helpers";
 const CommentsList = ({ state, libraries, postId }) => {
     const data = state.source.get(`@comments/${postId}`);
     const Html2React = libraries.html2react.Component;
-    
+
     return (
         <>
             <Container>

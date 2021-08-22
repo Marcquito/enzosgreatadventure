@@ -24,7 +24,12 @@ const Theme = ({ state }) => {
       body: "EnzosBodyText, system-ui, Helvetica, sans-serif",
       menu: "EnzosWorld, system-ui, Helvetica, sans-serif"
     },
-    colors: { ...state.theme.colors }
+    colors: { 
+      ...state.theme.colors,
+      background: {
+        100: "#333333"
+      }
+    }
   });
 
   return (

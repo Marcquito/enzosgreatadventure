@@ -28,6 +28,15 @@ const FontFace = () => (
         font-weight: 700;
         font-display: swap;
       }
+
+      @font-face {
+        font-family: "EnzosBoldBodyText";
+        src: 
+          url(${openSansBold}) format("woff"),
+          url(${openSansBold}) format("ttf");
+        font-weight: 700;
+        font-display: swap;
+      }
     `}
   />
 );

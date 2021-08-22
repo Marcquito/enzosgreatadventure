@@ -13,7 +13,7 @@ const settings = {
       "state": {
         "theme": {
           // The logo can be a text or an image url
-          logo: "🦴 Enzo's Great Adventure",
+          logo: "Enzo's Great Adventure",
           // show background pattern
           showBackgroundPattern: true,
           // show social links
@@ -22,7 +22,6 @@ const settings = {
           "menu": [
             ["Home", "/"],
             ["Our Story", "/about"],
-            ["Travel Tips", "/category/travel-tips"],
             ["The Great Adventure", "/category/the-great-adventure"],
           ],
           // the social links
