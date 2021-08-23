@@ -129,7 +129,7 @@ export function formatDate(date) {
   const month = jsDate.getMonth() + 1;
   const year = jsDate.getFullYear();
 
-  return `${monthNames[month]} ${formatDay(day)}, ${year}`;
+  return `${monthNames[month - 1]} ${formatDay(day)}, ${year}`;
 }
 
 export function isUrl(str) {
