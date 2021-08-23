@@ -5,6 +5,12 @@ const settings = {
       "url": "https://admin.enzosgreatadventure.com",
       "title": "Enzo's Great Adventure",
       "description": "To honor his 10th birthday, little Enzo will embark on an adventure of a lifetime."
+    },
+    "source": {
+      gfAuth: {
+        key: "ck_14d0e0ff97f86ff86f47a74c2c76dc739431cac7",
+        secret: "cs_7733c4e37dd387bff293cf657903a30d1d0c396e",
+      }
     }
   },
   "packages": [
@@ -66,9 +72,18 @@ const settings = {
         }
       }
     },
+    {
+      "name": "@frontity/google-analytics",
+      "state": {
+        googleAnalytics: {
+          trackingId: "G-S7BZ6H803V",
+        },
+      },
+    },
     "@frontity/tiny-router",
     "@frontity/html2react",
-    "@frontity/wp-comments"
+    "@frontity/wp-comments",
+    "@aamodtgroup/frontity-gravity-forms"
   ]
 };
 
