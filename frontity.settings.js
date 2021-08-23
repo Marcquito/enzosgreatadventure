@@ -17,17 +17,12 @@ const settings = {
           // show background pattern
           showBackgroundPattern: true,
           // show social links
-          showSocialLinks: true,
+          showSocialLinks: false,
           // the top-level navigation labels and links
           "menu": [
             ["Home", "/"],
             ["Our Story", "/about"],
             ["The Great Adventure", "/category/the-great-adventure"],
-          ],
-          // the social links
-          socialLinks: [
-            ["instagram", "https://www.pinterest.com/frontity/"],
-            ["twitter", "https://www.twitter.com/frontity/"],
           ],
           // color shades to use in the blog
           colors: {
@@ -67,8 +62,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://admin.enzosgreatadventure.com", 
-          homepage: "/" 
+          "url": "https://admin.enzosgreatadventure.com"
         }
       }
     },
