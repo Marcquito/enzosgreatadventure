@@ -112,11 +112,16 @@ const Content = styled.div`
     font-family: 
   }
 
-  ul {
+  ul, ol {
     padding: 1rem;
     font-size: 18px;
     margin-left: 35px;
     line-height: var(--chakra-lineHeights-tall);
+  }
+
+  ol li{
+    padding: 0 0 0 10px;
+    margin-bottom: 10px;
   }
 
   ul li{
